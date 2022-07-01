@@ -193,11 +193,19 @@ def train(dataloader, netG, netD, text_encoder, optimizerG, optimizerD, state_ep
                           '%s/fake_samples_epoch_%03d.png' % ('../imgs', epoch),
                           normalize=True)
 
-        if epoch % 1 == 0:
+        if epoch:
             torch.save(netG.state_dict(), f'../models/{cfg.CONFIG_NAME}/netG_{epoch}.pth')
             torch.save(netD.state_dict(), f'../models/{cfg.CONFIG_NAME}/netD_{epoch}.pth')
             torch.save(optimizerD.state_dict(), f'../models/{cfg.CONFIG_NAME}/optimizerD_{epoch}.pth')
             torch.save(optimizerG.state_dict(), f'../models/{cfg.CONFIG_NAME}/optimizerG_{epoch}.pth')
+            try:
+                os.remove(f'../models/{cfg.CONFIG_NAME}/netG_{epoch-3}.pth')
+                os.remove(f'../models/{cfg.CONFIG_NAME}/netD_{epoch-3}.pth')
+                os.remove(f'../models/{cfg.CONFIG_NAME}/optimizerD_{epoch-3}.pth')
+                os.remove(f'../models/{cfg.CONFIG_NAME}/optimizerG_{epoch-3}.pth')
+            except:
+                print(f"Can't delete {epoch-3}.")
+                
             with open(f"../models/{cfg.CONFIG_NAME}/latest.txt", mode='w') as progress:
                 progress.write(str(f"{epoch}"))
             print(f"Saved checkpoint at Epoch: {epoch}.")
