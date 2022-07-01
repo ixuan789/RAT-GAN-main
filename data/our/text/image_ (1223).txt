@@ -1,0 +1,2 @@
+me;original stock photo;new stock photo
+man;woman;woman

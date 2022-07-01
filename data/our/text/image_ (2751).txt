@@ -1,0 +1,2 @@
+mess;fortune
+Trump;Obama

@@ -1,0 +1,2 @@
+citizen;politician says something
+man;butterfly

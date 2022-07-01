@@ -1,0 +1,2 @@
+everyone;mask;hand washing
+man;woman;woman

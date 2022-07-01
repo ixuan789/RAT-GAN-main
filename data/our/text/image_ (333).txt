@@ -1,0 +1,2 @@
+ocean;plastic
+fire;gasoline can

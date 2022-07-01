@@ -1,0 +1,2 @@
+you;12 hours of studying;test is postponed
+cat;tail;telescope

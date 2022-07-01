@@ -1,0 +1,2 @@
+drug;dealer;police
+sleeping;bed;alarm clock

@@ -1,0 +1,2 @@
+Texas;COVID19
+cat;outdoor scene

@@ -1,0 +1,2 @@
+aliens;humanity;UFO sighting
+cat;mouse;knife

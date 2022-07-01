@@ -1,0 +1,2 @@
+organization;potential customers;loyal customers
+man;woman;woman

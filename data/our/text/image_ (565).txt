@@ -1,0 +1,2 @@
+you;goverment;master
+puppet;hand;goverment

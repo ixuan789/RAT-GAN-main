@@ -1,0 +1,2 @@
+teacher;schools
+dog;hand

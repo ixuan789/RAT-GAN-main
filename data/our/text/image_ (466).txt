@@ -1,0 +1,2 @@
+bed;me;responsibilites
+wall;cat;arm

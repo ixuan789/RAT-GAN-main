@@ -1,0 +1,2 @@
+woman;man
+Donald Trump;Kim Jong-un
